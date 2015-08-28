@@ -23,6 +23,13 @@ public:
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* InputComponent) override;
 
+   // Avancer (ou Reculer si -1)
+   UFUNCTION()
+      void Avancer(float Val);
+
+   // Glisser vers la droite ( ou vers la gauche si -1 )
+   UFUNCTION()
+      void VersLaDroite(float Val);
 	
 	
 };
